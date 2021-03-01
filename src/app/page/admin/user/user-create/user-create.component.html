@@ -1,0 +1,36 @@
+<div class="main-content">
+    <div class="p-col-5 p-as-start">
+        <p-card>
+            <p-header>
+                <div class="header-card">
+                    <h2 class="p-pt-5 p-pl-5">Modify User</h2>
+                </div>
+            </p-header>
+            <div class="p-fluid">
+                <div class="p-field">
+                    <label for="username" class="p-col-fixed" style="width:150px">Username</label>
+                    <input id="username" type="text" pInputText placeholder="Input Username" style="width: 300px;">
+                </div>
+                <div class="p-field">
+                    <label class="p-col-fixed" style="width:150px" for="password">Password</label>
+                    <input id="password" type="password" pInputText style="width: 300px;" placeholder="Input Password">
+                </div>
+                <div class="p-field p-grid p-ml-2">
+                    <label for="state" class="" style="width:142px">Role Code</label>
+                    <div class="drop-d">
+                        <p-dropdown [options]="roleList" [(ngModel)]="selectedRole" optionLabel="name"
+                            placeholder="Select Role Code" class="">
+                        </p-dropdown>
+                    </div>
+                </div>
+                <div class="btn p-field p-mt-5">
+                    <button class="back" routerLink='/admin/list-users' pButton type="button" label="Back"
+                        style="width:150px"></button>
+                    <button class="save" pButton type="button" label="Save" style="width:150px"></button>
+                </div>
+            </div>
+        </p-card>
+    </div>
+    <div class="p-col p-as-center"></div>
+    <div class="p-col p-as-end"></div>
+</div>

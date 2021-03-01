@@ -1,0 +1,45 @@
+<div class="nav">
+    <p-menubar [model]="items">
+        <ng-template pTemplate="start">
+            <img src="https://preview.colorlib.com/theme/laundry/assets/img/logo/logo.png" height="24" class="p-mr-5">
+        </ng-template>
+        <ng-template pTemplate="end">
+            <button pButton label="Login" icon="pi pi pi-user"></button>
+        </ng-template>
+    </p-menubar>
+</div>
+<div class="p-grid vertical-container p-mt-5">
+    <div class="p-col p-as-start">
+
+    </div>
+    <div class="p-col p-as-center">
+        <p-card>
+            <div class="head-title p-text-center">
+                <p-header>
+                    <h1 class="">Login Laundry</h1>
+                </p-header>
+            </div>
+            <div class="p-p-3 p-text-center">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                    <input type="text" pInputText [(ngModel)]="username" placeholder="Input Username" />
+                </div>
+            </div>
+            <div class="p-p-3 p-text-center">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon"><i class="pi pi-key"></i></span>
+                    <input type="password" pInputText [(ngModel)]="password" placeholder="Input Password" />
+                </div>
+            </div>
+            <div class="p-p-3 p-text-center">
+                <button pButton type="button" label="Login" (click)="login()"></button>
+            </div>
+        </p-card>
+    </div>
+    <div class="p-col p-as-end">
+
+    </div>
+</div>
+<div class="footer p-text-center">
+    <p>Copyright &copy; 2021 All rights reserved.</p>
+</div>

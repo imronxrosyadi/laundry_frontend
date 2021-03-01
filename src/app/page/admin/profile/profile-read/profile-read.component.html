@@ -1,0 +1,59 @@
+<div class="main-content">
+    <p-card>
+        <div class="header-card">
+            <p-header class="p-text-center p-p-5">
+                <h2>List Profile</h2>
+            </p-header>
+        </div>
+        <div class="create p-text-right p-mt-5">
+            <button pButton type="button" class="p-button-outlined" routerLink='/admin/modif-profile'
+                label="+ Create"></button>
+        </div>
+        <div class="tbl">
+            <p-table [value]="profile">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>No</th>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>Username</th>
+                        <th>Added by</th>
+                        <th>Action</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body">
+                    <tr>
+                        <td>1</td>
+                        <td>PFL001</td>
+                        <td>Imron Rosyadi</td>
+                        <td>081219979276</td>
+                        <td>Bintaro</td>
+                        <td>admin</td>
+                        <td>Imron Rosyadi</td>
+                        <td>
+                            <button pButton type="button" class="p-button-secondary" routerLink='/modif-profile'
+                                label="Edit"></button>&nbsp;
+                            <button pButton type="button" class="p-button-danger p-mt-2" label="Delete"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>PFL002</td>
+                        <td>Imron Cashier</td>
+                        <td>0217332122</td>
+                        <td>Ciledug</td>
+                        <td>cashier</td>
+                        <td>Imron Rosyadi</td>
+                        <td>
+                            <button pButton type="button" class="p-button-secondary" routerLink='/modif-profile'
+                                label="Edit"></button>&nbsp;
+                            <button pButton type="button" class="p-button-danger p-mt-2" label="Delete"></button>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </p-card>
+</div>

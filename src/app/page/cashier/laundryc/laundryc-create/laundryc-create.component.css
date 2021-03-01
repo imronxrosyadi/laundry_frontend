@@ -1,0 +1,26 @@
+.main-content {
+  min-height: 600px;
+  margin: 50px;
+}
+
+.save {
+  margin-left: 910px;
+}
+
+.drop-d {
+  width: 300px;
+}
+
+.tbl {
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.add {
+  margin-left: 300px;
+}
+
+.dtl {
+  padding-left: 100px;
+}

@@ -1,0 +1,99 @@
+<div class="main-content">
+    <p-card>
+        <p-header>
+            <div class="header-card">
+                <h2 class="p-pt-5 p-pl-5">Modify Laundry</h2>
+            </div>
+        </p-header>
+        <div class="p-grid">
+            <div class="p-fluid p-ml-5">
+                <div class="p-field p-grid p-ml-1">
+                    <label for="state" class="p-mr-5 p-pr-3">Customer Code</label>
+                    <div class="drop-d">
+                        <p-dropdown [options]="cust" [(ngModel)]="selectedCust" optionLabel="name"
+                            placeholder="Select Customer Code" class="">
+                        </p-dropdown>
+                    </div>
+                </div>
+                <div class="p-field">
+                    <label for="startDate" class="p-col-fixed" style="width:150px" class="p-mr-2 p-ml-1">Start Laundry
+                        Date</label>
+                    <input id="startDate" type="datetime-local" pInputText placeholder="Input Start Laundry Date"
+                        style="width: 300px;">
+                </div>
+                <div class="p-field">
+                    <label for="endDate" class="p-col-fixed" style="width:150px" class="p-mr-2 p-ml-1">End Laundry
+                        Date</label>
+                    <input id="endDate" type="datetime-local" pInputText placeholder="Input End Laundry Date"
+                        style="width: 300px;">
+                </div>
+                <div class="p-field p-grid p-ml-1">
+                    <label for="state" class="p-mr-5 p-pr-4">Payment Code</label>
+                    <div class="drop-d">
+                        <p-dropdown [options]="pay" [(ngModel)]="selectedPay" optionLabel="name"
+                            placeholder="Select Payment Code" class="">
+                        </p-dropdown>
+                    </div>
+                </div>
+            </div>
+            <div class="dtl p-fluid p-ml-5">
+                <div class="p-field">
+                    <label for="desc" class="p-col-fixed" style="width:150px">Description</label>
+                    <input id="desc" type="text" pInputText placeholder="Input Description" style="width: 300px;">
+                </div>
+                <div class="p-field">
+                    <label for="unit" class="p-col-fixed" style="width:150px">Unit</label>
+                    <input id="unit" type="text" pInputText placeholder="Input Unit" style="width: 300px;">
+                </div>
+                <div class="p-field p-grid p-ml-1">
+                    <label for="state" class="p-ml-1 p-mr-5 p-pr-3">Service Code</label>
+                    <div class="drop-d">
+                        <p-dropdown [options]="service" [(ngModel)]="selectedService" optionLabel="name"
+                            placeholder="Select Service Code" class="">
+                        </p-dropdown>
+                    </div>
+                </div>
+                <div class="p-field p-grid p-ml-1">
+                    <label for="state" class="p-ml-1 p-mr-4 p-pr-3">Perfume Code</label>
+                    <div class="drop-d">
+                        <p-dropdown [options]="perfume" [(ngModel)]="selectedPerfume" optionLabel="name"
+                            placeholder="Select Perfume Code" class="">
+                        </p-dropdown>
+                    </div>
+                </div>
+                <div class="p-field p-grid p-ml-1">
+                    <label for="state" class="p-ml-1 p-mr-5 p-pr-4">Status Code</label>
+                    <div class="drop-d">
+                        <p-dropdown [options]="status" [(ngModel)]="selectedStatus" optionLabel="name"
+                            placeholder="Select Status Code" class="">
+                        </p-dropdown>
+                    </div>
+                </div>
+                <button class="add" pButton type="button" label="Add" style="width:150px"></button>
+            </div>
+            <div class="tbl p-mt-5">
+                <p-table [value]="dtlLaundry">
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th>No</th>
+                            <th>Detail Code</th>
+                            <th>Description</th>
+                            <th>Unit</th>
+                            <th>Service</th>
+                            <th>Perfume</th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body">
+                        <tr>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </div>
+            <div class="btn p-field p-mt-5">
+                <button class="back" routerLink='/cashier/list-laundry' pButton type="button" label="Back"
+                    style="width:150px"></button>
+                <button class="save" pButton type="button" label="Save" style="width:150px"></button>
+            </div>
+        </div>
+    </p-card>
+</div>

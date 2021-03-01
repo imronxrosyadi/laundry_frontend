@@ -1,0 +1,12 @@
+<div class="nav">
+    <p-menubar [model]="items">
+        <ng-template pTemplate="start">
+            <img src="https://preview.colorlib.com/theme/laundry/assets/img/logo/logo.png" height="24" class="p-mr-2">
+        </ng-template>
+        <button pButton label="Logout" class="p-button-danger" routerLink="/login" icon="pi pi-power-off"></button>
+    </p-menubar>
+</div>
+<router-outlet></router-outlet>
+<div class="footer p-text-center">
+    <p>Copyright &copy; 2021 All rights reserved.</p>
+</div>

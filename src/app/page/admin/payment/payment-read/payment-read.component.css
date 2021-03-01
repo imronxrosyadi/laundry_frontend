@@ -1,0 +1,19 @@
+.tbl {
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.create {
+  margin-right: 50px;
+}
+
+.main-content {
+  min-height: 600px;
+  margin: 50px;
+}
+
+.header-card {
+  color: white;
+  background-color: #6785ff;
+}

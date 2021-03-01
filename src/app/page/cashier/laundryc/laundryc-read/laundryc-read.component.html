@@ -1,0 +1,67 @@
+<div class="main-content">
+    <p-card>
+        <div class="header-card">
+            <p-header class="p-text-center p-p-5">
+                <h2>List Laundry</h2>
+            </p-header>
+        </div>
+        <div class="create p-text-right p-mt-5">
+            <button pButton type="button" routerLink='/cashier/modify-laundry' label="+ Create"></button>
+        </div>
+        <div class="tbl">
+            <p-table [value]="laundry">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>No</th>
+                        <th>Receipt</th>
+                        <th>Customer Name</th>
+                        <th>Start Laundry</th>
+                        <th>Done Laundry</th>
+                        <th>Total Price</th>
+                        <th>Payment Method</th>
+                        <th>Added by</th>
+                        <th>Action</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body">
+                    <tr>
+                        <td>1</td>
+                        <td>LNDRY-2901-0001</td>
+                        <td>Apri Customer</td>
+                        <td>20 Jan 2021</td>
+                        <td>25 Jan 2021</td>
+                        <td>Rp. 35.000</td>
+                        <td>Debit</td>
+                        <td>Imron Rosyadi</td>
+                        <td><button pButton type="button" class="p-button-outlined" routerLink='/cashier/detail-laundry'
+                                label="Detail"></button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>LNDRY-5323-0002</td>
+                        <td>Farel Customer</td>
+                        <td>21 Jan 2021</td>
+                        <td>26 Jan 2021</td>
+                        <td>Rp. 54.000</td>
+                        <td>Kredit</td>
+                        <td>Imron Rosyadi</td>
+                        <td><button pButton type="button" class="p-button-outlined" routerLink='/cashier/detail-laundry'
+                                label="Detail"></button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>LNDRY-5322-0003</td>
+                        <td>Ocay Customer</td>
+                        <td>22 Jan 2021</td>
+                        <td>27 Jan 2021</td>
+                        <td>Rp. 23.000</td>
+                        <td>OVO</td>
+                        <td>Imron Rosyadi</td>
+                        <td><button pButton type="button" class="p-button-outlined" routerLink='/cashier/detail-laundry'
+                                label="Detail"></button></td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </p-card>
+</div>

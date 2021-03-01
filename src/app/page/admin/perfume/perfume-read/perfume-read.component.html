@@ -1,0 +1,61 @@
+<div class="main-content">
+    <p-card>
+        <div class="header-card">
+            <p-header class="p-text-center p-p-5">
+                <h2>List Perfume</h2>
+            </p-header>
+        </div>
+        <div class="create p-text-right p-mt-5">
+            <button pButton type="button" class="p-button-outlined" routerLink='/admin/modif-perfume'
+                label="+ Create"></button>
+        </div>
+        <div class="tbl">
+            <p-table [value]="perfume">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>No</th>
+                        <th>Perfume Code</th>
+                        <th>Perfume Name</th>
+                        <th>Added by</th>
+                        <th>Action</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body">
+                    <tr>
+                        <td>1</td>
+                        <td>PFM001</td>
+                        <td>Lemonade</td>
+                        <td>Imron Rosyadi</td>
+                        <td>
+                            <button pButton type="button" class="p-button-secondary" routerLink='/modif-perfume'
+                                label="Edit"></button>&nbsp;
+                            <button pButton type="button" class="p-button-danger" label="Delete"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>PFM002</td>
+                        <td>Lavender</td>
+                        <td>Imron Rosyadi</td>
+                        <td>
+                            <button pButton type="button" class="p-button-secondary" routerLink='/modif-perfume'
+                                label="Edit"></button>&nbsp;
+                            <button pButton type="button" class="p-button-danger" label="Delete"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>PFM003</td>
+                        <td>Rose</td>
+                        <td>Imron Rosyadi</td>
+                        <td>
+                            <button pButton type="button" class="p-button-secondary" routerLink='/modif-perfume'
+                                label="Edit"></button>&nbsp;
+                            <button pButton type="button" class="p-button-danger" label="Delete"></button>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </p-card>
+</div>

@@ -1,0 +1,45 @@
+<div class="main-content">
+    <div class="p-col-5 p-as-start">
+        <p-card>
+            <p-header>
+                <div class="header-card">
+                    <h2 class="p-pt-5 p-pl-5">Modify Profile</h2>
+                </div>
+            </p-header>
+            <div class="p-fluid">
+                <div class="p-field">
+                    <label for="proCode" class="p-col-fixed" style="width:150px">Profile Code</label>
+                    <input id="proCode" type="text" pInputText placeholder="Input Profile Code" style="width: 300px;">
+                </div>
+                <div class="p-field">
+                    <label for="proName" class="p-col-fixed" style="width:150px">Profile Name</label>
+                    <input id="proName" type="text" pInputText placeholder="Input Profile Name" style="width: 300px;">
+                </div>
+                <div class="p-field">
+                    <label for="proPhone" class="p-col-fixed" style="width:150px">Profile Phone</label>
+                    <input id="proPhone" type="text" pInputText placeholder="Input Profile Phone" style="width: 300px;">
+                </div>
+                <div class="p-field">
+                    <label for="proAddress" class="p-col-fixed" style="width:150px">Profile Address</label>
+                    <input id="proAddress" type="text" pInputText placeholder="Input Profile Address"
+                        style="width: 300px;">
+                </div>
+                <div class="p-field p-grid p-ml-2">
+                    <label for="state" class="" style="width:142px">Username</label>
+                    <div class="drop-d">
+                        <p-dropdown [options]="userList" [(ngModel)]="selectedUser" optionLabel="name"
+                            placeholder="Select Username" class="">
+                        </p-dropdown>
+                    </div>
+                </div>
+                <div class="btn p-field p-mt-5">
+                    <button class="back" routerLink='/admin/list-profiles' pButton type="button" label="Back"
+                        style="width:150px"></button>
+                    <button class="save" pButton type="button" label="Save" style="width:150px"></button>
+                </div>
+            </div>
+        </p-card>
+    </div>
+    <div class="p-col p-as-center"></div>
+    <div class="p-col p-as-end"></div>
+</div>
